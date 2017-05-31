@@ -1,0 +1,677 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Proyecto Final</title>
+
+<link rel="stylesheet" href="css/tema-app10.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"> </script>
+<script src="phonegap.js" type="text/javascript"></script><!-- necesario*/ -->
+
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<body onLoad="MM_preloadImages('imagenes/materiasprogramacion.jpg','imagenes/materiaslogistica.jpg','imagenes/materiasMecanica.jpg','imagenes/materiaselectricidad.JPG','imagenes/cbtis campo2.jpg','imagenes/cancha rapida 2.jpg','imagenes/cancha de basquet.jpg')"><div data-role="page" id="Principal" data-theme="b">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>CBTiis No. 16</h1>
+   </div>
+   
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/cbtis_programacion_2.jpg" alt="cbtis programacion 2" title="cbtis programacion 2" id="wows1_0"/></li>
+		<li><img src="data1/images/cbtis3.jpg" alt="cbtis3" title="cbtis3" id="wows1_1"/></li>
+		<li><img src="data1/images/cbtis4.jpg" alt="cbtis4" title="cbtis4" id="wows1_2"/></li>
+		<li><img src="data1/images/cbtis16_1.jpg" alt="cbtis16 1" title="cbtis16 1" id="wows1_3"/></li>
+		<li><img src="data1/images/dgeti.png" alt="DGETI" title="DGETI" id="wows1_4"/></li>
+		<li><img src="data1/images/entrada.jpg" alt="entrada" title="entrada" id="wows1_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/img_20170530_131423424_hdr.jpg" alt="jquery carousel" title="IMG_20170530_131423424_HDR" id="wows1_6"/></a></li>
+		<li><img src="data1/images/patio_civico.jpg" alt="patio civico" title="patio civico" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="cbtis programacion 2"><span><img src="data1/tooltips/cbtis_programacion_2.jpg" alt="cbtis programacion 2"/>1</span></a>
+		<a href="#" title="cbtis3"><span><img src="data1/tooltips/cbtis3.jpg" alt="cbtis3"/>2</span></a>
+		<a href="#" title="cbtis4"><span><img src="data1/tooltips/cbtis4.jpg" alt="cbtis4"/>3</span></a>
+		<a href="#" title="cbtis16 1"><span><img src="data1/tooltips/cbtis16_1.jpg" alt="cbtis16 1"/>4</span></a>
+		<a href="#" title="DGETI"><span><img src="data1/tooltips/dgeti.png" alt="DGETI"/>5</span></a>
+		<a href="#" title="entrada"><span><img src="data1/tooltips/entrada.jpg" alt="entrada"/>6</span></a>
+		<a href="#" title="IMG_20170530_131423424_HDR"><span><img src="data1/tooltips/img_20170530_131423424_hdr.jpg" alt="IMG_20170530_131423424_HDR"/>7</span></a>
+		<a href="#" title="patio civico"><span><img src="data1/tooltips/patio_civico.jpg" alt="patio civico"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">bootstrap slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+   
+    <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  
+    <div>
+   
+     <br>
+    </div>
+    <div>
+     
+     
+    </div>
+  </div>
+ </div>
+ <div>
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+  <li class="ui-first-child ui-last-child">
+     <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Plantel Educativo</h2>
+       <p> Cuenta:</p>
+     </a>
+  </li>
+  
+  <li class="ui-first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Especialidades</h2>
+        <p>¿De Que Son?</p>
+     </a>
+  </li>
+  
+  <li class="ui-first-child ui-last-child">  
+     <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Inscripciones</h2>
+       <p>¿Cuando son?</p>
+     </a>
+  </li>
+  
+  <li class="ui-first-child ui-last-child">
+     <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Espacios Recreativos</h2>
+        <p> ¿Cuantos Son?</p>
+     </a>
+  </li>
+  
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Ubicacion</h2>
+     <p>Donde Se Localiza</p>
+    </a> 
+  </li>
+   
+
+ 
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Contacto</h2>
+     <p>A Quien:</p>
+    </a> 
+  </li>
+   
+
+ 
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Galeria</h2>
+     <p>Fotos del Plantel</p>
+    </a> 
+  </li>
+   
+
+ 
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Elaborado Por</h2>
+     <p>Elaborado Por:</p>
+    </a> 
+  </li>
+   
+   </ul>
+ </div>
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <div>
+      <img src="res/android/mdpi.png" width="46" height="46">
+    </div>
+       <div>
+         <h4>Proyecto Final</h4>
+         <h4>Alvaro Perez Calderon</h4>
+       </div>
+    </div>
+ </div>
+ 
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Plantel Educativo</h1>
+  </div>
+   
+    
+   <div data-role="content" align="center">
+    <div>
+     <h2>Descripcion</h2>
+     <p> La institucion cuenta con   aulas mas 3 laboratorios quimicos , La institucion cuenta con 4 carreras tecnicas las culaes son: PROGRAMACION,LOGISTICA,MECANICA INDUSTRIAL y ELECTRICIDAD
+     La carrera de PROGRAMACION cuenta con 3 salas de computo, MECANICA INDUSTRIAL 1 salon para ello, ELECTRICIDAD 1 salon para ello. Cuenta con 3 baños para hombre y 3 para Mujeres, Los Espacios recreativos tiene 1 cancha de basquetball, 1 cancha para futbol rapido y 1 cancha para futbol de campo tiene 18 aulas grupales en todo el plantel mas olos servicios de enfermeria, prefectura,etc</p>
+   </div>
+   
+    <img src="imagenes/DGETI.png">
+     
+    
+         <div data-role="main" class="ui-content" align="center">
+    <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+    <a href="http://www.cbtis016.edu.mx/" data-role="button" 
+     <h2>Pagina de la Escuela</h2>
+     </a>
+     </li>
+    </ul>
+    </div>
+    </div>
+     <p>Pagina  De Facebook</p> <a href=" https://es-la.facebook.com/cbtis16atlixco/" target="_self">click</a> 
+   
+   
+    
+
+     
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Proyecto Final, APC</h4>
+  </div>
+   </div>
+ </div>
+
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Ofertas Educativas</h1>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Programacion</h1>
+    <div>
+     <p> La formación que ofrece la carrera de Técnico en programación permite al egresado, a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a la:
+
+Instalación y desarrollo de software de aplicación utilizando programación estructurada y orientada a objetos en ambientes web y móviles, con almacenamiento persistente de datos.
+ Así como la configuración y administración de plataforma e-learning y Comercio electrónico.
+OPORTUNIDADES DE INSERCIÓN LABORAL.</p>
+     <p>  Desarrolladores de software
+         Analistas de sistemas
+         Analista de programas de cómputo
+         Programador de sistemas de cómputo
+         Edición de software y edición de software integrada con la reproducción
+         Escuelas de computación del sector privado
+         Servicios de diseño de sistemas de cómputo y servicios relacionados
+         Escuelas de computación del sector público</p>
+     <br>
+    </div>
+    <div>
+ 
+   
+   
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('programacion','','imagenes/materiasprogramacion.jpg',1)"><img src="imagenes/Programacion.jpg" width="631" height="511" id="programacion"></a>
+
+<p>Puede Escojer Caulquiera De Las Siguientes Opciones Para Dirigirse A La Pagina web (Click al Boton o a lo subrayado)</p>
+
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+    <a href="http://www.cbtis016.edu.mx/index.php/oferta-educativa/programacion" data-role="button" 
+     <h2>Pagina para mas informacion acerca de la especialidad</h2>
+     </a>
+     </li>
+    </ul>
+    </div>
+</div>
+    
+      <p>Pagina  Para Mas Informacion</p> <a href="http://www.cbtis016.edu.mx/index.php/oferta-educativa/programacion" target="_self">click</a> 
+      
+      </div>
+  </div>
+ </div>
+ 
+ 
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Logistica</h1>
+    <div>
+     <p>Ofrece las competencias profesionales que permiten al estudiante realizar actividades dirigidas a la administración de bienes, planificando los suministros destinados al almacenamiento de manera manual y electrónica, la organización de los nodos logísticos para el transporte de mercancías, así como proveer los servicios y atención al cliente sobre los movimientos y los costos de la cadena logística.</p>
+     <p>  Durante el proceso de formación de los cinco módulos, el estudiante desarrollara o reforzará las siguientes competencias profesionales:</p>
+
+          <p>Supervisa el proceso de suministrio de bienes.</p>
+          <p>Apoya el proceso de administración al servicio de almacenaje de bienes.
+          <p>Organiza el transporte de mercancías. 
+          <p>Proveve servicio de atencion al cliente sbre los movimientos de logistica. Organiza los costos de la cadena logística y de las competencias de productividad y empleabilidad:</p>
+          <p>Atencion al proceso</p>
+          <p>Planeación y organización</p>
+          <p>Ética profesional</p>
+          <p>Comunicación efectiva</p>
+          <p>Trabajo en equipo</p>
+          <p>Atención al cliente</p>
+          <p>Relaciones interpersonales</p>
+     <br>
+    </div>
+    <div>
+   
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('logistica','','imagenes/materiaslogistica.jpg',1)"><img src="imagenes/Logistica.jpg" width="863" height="623" id="logistica"></a>
+
+ <p>Puede Escojer Caulquiera De Las Siguientes Opciones Para Dirigirse A La Pagina web (Click al Boton o a lo subrayado)</p>
+
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+    <a href="http://www.cbtis016.edu.mx/index.php/oferta-educativa/logistica" data-role="button" 
+     <h2>Pagina para mas informacion acerca de la especialidad</h2>
+     </a>
+     </li>
+    </ul>
+    </div>
+  </div>
+  
+   <p>Pagina  Para Mas Informacion</p> <a href="http://www.cbtis016.edu.mx/index.php/oferta-educativa/logistica" target="_self">click</a> 
+    
+      </div>
+  </div>
+ </div>
+ 
+    <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Mecanica Industrial</h1>
+    <div>
+     <p>Profesionista que da mantenimiento a los sistemas de transmisión de potencia utilizando las máquinas herramientas convencionales, de control numérico, máquinas de soldar con arco eléctrico y oxigas auxiliándose de los procesos de ajuste de piezas mecánicas.</p>
+     <p>  Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará las siguientes competencias profesionales, correspondientes al Técnico en Mecánica Industrial: </p>
+
+          <p> Suelda y ajusta piezas mecánicas.</p>
+          <p>Maquina piezas mecánicas en talador y torno.</p>
+          <p> Maquina piezas mecánicas en fresadora, rectificadora y cepillo.</p>
+          <p>Maquina piezas mecánicas por CNC.</p>
+          <p> Mantiene sistemas de transmisión de potencia</p>
+          <p>Planeación y organización</p>
+       
+     <br>
+    </div>
+    <div>
+   
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Mecanica','','imagenes/materiasMecanica.jpg',1)"><img src="imagenes/Mecanica.jpg" width="923" height="569" id="Mecanica"></a>
+ 
+<p>Puede Escojer Caulquiera De Las Siguientes Opciones Para Dirigirse A La Pagina web (Click al Boton o a lo subrayado)</p>
+
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+    <a href="http://www.cbtis016.edu.mx/index.php/oferta-educativa/mecanica-industrial" data-role="button" 
+     <h2>Pagina para mas informacion acerca de la especialidad</h2>
+     </a>
+     </li>
+    </ul>
+    </div>
+  </div>
+  
+     <p>Pagina  Para Mas Informacion</p> <a href="http://www.cbtis016.edu.mx/index.php/oferta-educativa/mecanica-industrial" target="_self">click</a> 
+    
+      </div>
+  </div>
+ </div>
+ 
+ 
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Electricidad</h1>
+    <div>
+     <p>La carrera de Técnico en Electricidad permite al estudiante sustentar la demanda de ocupación de Técnicos Electricistas en el sector productivo y de servicios, capaz de diseñar y realizar instalaciones eléctricas residenciales y comerciales, así como proporcionar mantenimiento a máquinas eléctricas.</p>
+     <p>  DuDurante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará las siguientes competencias profesionales, correspondientes al Técnico en Electricidad:</p>
+          <p>Desarrolla instalaciones eléctricas residenciales y comerciales.</p>
+          <p>Mantiene los motores y generadores de CA y CC..</p>
+          <p>Mantiene en operación los circuitos de control electromagnético y electrónico. </p>
+          <p>Mantiene los sistemas de iluminación y de energía renovable.</p>
+          <p>Mantiene instalaciones eléctricas de media y baja tensión.</p>
+          
+          
+     <br>
+    </div>
+    <div>
+   
+ 
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('electricidad','','imagenes/materiaselectricidad.JPG',1)"><img src="imagenes/electricidad.JPG" width="823" height="596" id="electricidad"></a>
+
+  <p>Puede Escojer Caulquiera De Las Siguientes Opciones Para Dirigirse A La Pagina web (Click al Boton o a lo subrayado)</p>
+
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+    <a href="http://www.cbtis016.edu.mx/index.php/oferta-educativa/electricidad" data-role="button" 
+     <h2>Pagina para mas informacion acerca de la especialidad</h2>
+     </a>
+     </li>
+    </ul>
+    </div>
+  </div>
+  
+ 
+    
+     <p>Pagina  Para Mas Informacion</p> <a href="http://www.cbtis016.edu.mx/index.php/oferta-educativa/electricidad" target="_self">click</a> 
+    
+    
+      </div>
+  </div>
+ </div>
+ 
+ 
+
+     
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Proyecto Final, APC</h4>
+  </div>
+   </div>
+ </div>
+ 
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Ficha de Nuevo Ingreso</h1>
+  </div>
+  
+   <div data-role="content" align="center">
+    <div>
+     <h2>Requisitos:</h2>
+     <p>Estos Son Los Requisitos Que Se Necesitan para La Inscripcion a Esta Institucion.</p>
+     <img src="imagenes/fichas2017.jpg">
+     
+     <p> Tambien Puede Visitar Los Siguientes Enlaces Para Mas Informacion</p>
+     
+      <div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+    <a href="https://es-la.facebook.com/cbtis16atlixco/" data-role="button" 
+     <h2>Pagina de Facebook</h2>
+     </a>
+     </li>
+    </ul>
+    </div>
+  </div>
+  
+     <p>Pagina  Para Mas Informacion</p> <a href="http://www.cbtis016.edu.mx/index.php/estudiantes/nuevo-ingreso" target="_self">click</a> 
+     
+     
+   </div>
+     
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Proyecto Final, APC</h4>
+  </div>
+   </div>
+ </div>
+ 
+
+ 
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Espacios Recreativos</h1>
+  </div>
+  
+   <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Cancha De Campo</h1>
+    <div>
+     <p>La Cancha de Campo es la mas grande con el que cuenta La institucion</p>
+     
+     <br>
+    </div>
+    <div>
+    
+     
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cancha campo','','imagenes/cbtis campo2.jpg',1)"><img src="imagenes/cbtis campo.jpg" width="2560" height="1440" id="cancha campo"></a>
+   
+   
+</div>
+</div>
+</div>
+
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Cancha De Futbol Rapido</h1>
+    <div>
+     <p>Espacio enrejado para esta actividad La Cual es la mas utilizada Por Los Alumnos</p>
+     <br>
+    </div>
+    <div>
+       
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cancha rapido','','imagenes/cancha rapida 2.jpg',1)"><img src="imagenes/cancha rapida.jpg" width="1440" height="2560" id="cancha rapido"></a>
+     
+     
+     
+         </div>
+    </div>
+ </div>
+ 
+
+    
+     
+     <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+   <h1>Cancha De Basquetball</h1>
+    <div>
+     <p>Cancha de basqueball para esta actividad</p>
+     <br>
+    </div>
+    <div>
+       
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cancha basquet','','imagenes/cancha de basquet.jpg',1)"><img src="imagenes/cancha basquet.jpg" width="3264" height="2448" id="cancha basquet"></a>
+     
+         </div>
+    </div>
+  </div>
+
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Patio Civico</h1>
+    <div>
+     <p>Se Rinde honores A Nuestra Bandera de Mexico Cada semana la cual corresponde a uno de los grupos de la institucion por semana u otros tipos de eventos</p>
+     <br>
+    </div>
+    <div>
+       
+      <img src="imagenes/patio civico.jpg">
+       
+         </div>
+    </div>
+ </div>
+
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Proyecto Final, APC</h4>
+  </div>
+   </div>
+ </div>
+ 
+
+ 
+
+ 
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Ubicacion del Plantel</h1>
+  </div>
+  
+   <div data-role="content" align="center">
+    <div>
+     <h2>Donde Se Enceuntra</h2>
+     <p>En El Siguiente Enlace se da a conocer la ubicacion del plantel </p>
+  
+   </div>
+   
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.630795877576!2d-98.42659758471645!3d18.903453362284807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfb47405555555%3A0x19bb49f598a8846f!2sCBTis+No+016!5e0!3m2!1ses!2smx!4v1496087451885" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+   
+     <div data-role="main" class="ui-content" align="center">
+    <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+    <a href="http://www.cbtis016.edu.mx/index.php/plantel/ubicacion-del-plantel" data-role="button" 
+     <h2>Pagina de la ubicacion</h2>
+     </a>
+     </li>
+    </ul>
+    </div>
+    </div>
+    
+    
+   
+   
+    
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Proyecto Final, APC</h4>
+  </div>
+   </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Contacto </h1>
+  </div>
+  
+   <div data-role="content" align="center">
+    <div>
+     <h2 Maneras de Comunicarse</h2>
+     <p>  Al Telefono: 01 (244) 44 5 25 43</p>
+     <p>De la  Institucion</p>
+     <p>Ubicada en la calle Fray Bartolome de las casas No.2001 y Fray Servando Teresa De Mier</p>
+     <p>Col.Ricardo Flores Magon Atlixco Puebla</p>
+   </div>
+   
+   
+   <div data-role="main" class="ui-content" align="center">
+    <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+    <a href="http://www.cbtis016.edu.mx/index.php/plantel/historia-del-plantel" data-role="button" 
+     <h2>Historia  Del Plantel</h2>
+     </a>
+     </li>
+    </ul>
+    </div>
+    </div>
+   
+    
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Proyecto Final, APC</h4>
+  </div>
+   </div>
+ </div>
+ 
+ 
+ <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Galeria </h1>
+  </div>
+  
+  <div>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/cbtis16_1.jpg" alt="cbtis16 1" title="cbtis16 1" id="wows2_0"/></li>
+		<li><img src="data2/images/dgeti.png" alt="DGETI" title="DGETI" id="wows2_1"/></li>
+		<li><img src="data2/images/entrada.jpg" alt="entrada" title="entrada" id="wows2_2"/></li>
+		<li><img src="data2/images/img_20170530_131423424_hdr.jpg" alt="IMG_20170530_131423424_HDR" title="IMG_20170530_131423424_HDR" id="wows2_3"/></li>
+		<li><img src="data2/images/patio_civico.jpg" alt="patio civico" title="patio civico" id="wows2_4"/></li>
+		<li><img src="data2/images/cbtis16_2.jpg" alt="cbtis16 2" title="cbtis16 2" id="wows2_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data2/images/cbtis_mecanica.jpg" alt="jquery carousel" title="cbtis mecanica" id="wows2_6"/></a></li>
+		<li><img src="data2/images/cbtis5.jpg" alt="cbtis5" title="cbtis5" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="cbtis16 1"><span><img src="data2/tooltips/cbtis16_1.jpg" alt="cbtis16 1"/>1</span></a>
+		<a href="#" title="DGETI"><span><img src="data2/tooltips/dgeti.png" alt="DGETI"/>2</span></a>
+		<a href="#" title="entrada"><span><img src="data2/tooltips/entrada.jpg" alt="entrada"/>3</span></a>
+		<a href="#" title="IMG_20170530_131423424_HDR"><span><img src="data2/tooltips/img_20170530_131423424_hdr.jpg" alt="IMG_20170530_131423424_HDR"/>4</span></a>
+		<a href="#" title="patio civico"><span><img src="data2/tooltips/patio_civico.jpg" alt="patio civico"/>5</span></a>
+		<a href="#" title="cbtis16 2"><span><img src="data2/tooltips/cbtis16_2.jpg" alt="cbtis16 2"/>6</span></a>
+		<a href="#" title="cbtis mecanica"><span><img src="data2/tooltips/cbtis_mecanica.jpg" alt="cbtis mecanica"/>7</span></a>
+		<a href="#" title="cbtis5"><span><img src="data2/tooltips/cbtis5.jpg" alt="cbtis5"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">bootstrap slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+
+
+   <div data-role="content" align="center">
+    <div>
+     <h2>Fotos De La Institucion </h2>
+   
+   </div>
+   
+   
+    
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Proyecto Final, APC</h4>
+  </div>
+   </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1> Elaborado Por:</h1>
+  </div>
+  
+   <div data-role="content" align="center">
+    <div>
+     <h2 Elaborado:</h2>
+      
+     <p> Alvaro Perez Calderon </p>
+     <p> 4 F</p>
+     <p>Alumno del Cbtis No. 16</p>
+     <p> Tecnico en  Programacion</p>
+    
+   </div>
+   
+   
+    
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Proyecto Final, APC</h4>
+  </div>
+   </div>
+ </div>
+ 
+
+  
+</body>
+</html>
